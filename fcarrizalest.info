@@ -1,0 +1,23 @@
+name = fcarrizalest.com
+description = tema personalizado para el blog editado
+package = Core
+version = VERSION
+core = 7.x
+stylesheets[all][] = css/normalize.css
+stylesheets[all][] = css/icomoon/style.css
+stylesheets[all][] = css/estilos.css
+
+ 
+; Information added by drupal.org packaging script on 2013-04-03
+version = "7.22"
+project = "drupal"
+
+
+screenshot = screen.png
+
+regions[promo] = Promo
+regions[left] = Left sidebar
+regions[right] = Right sidebar
+regions[content] = Content
+regions[header] = Header
+regions[footer] = Footer
