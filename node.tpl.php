@@ -50,9 +50,12 @@
 												 <?php hide($content['field_image']);
 												print render($content);
 												?>
-												<span itemprop="author" itemscope itemtype="http://schema.org/Person">
-<span itemprop="name">Francisco Carrizales</span></span>
-											
+
+
+												<a href="https://www.digitalocean.com/?refcode=ee109fde97fd">
+													<img src="https://88adafc72127a4417182d723eaefb7e7a0720725.googledrive.com/host/0BzTv8wZGN_ZlbEZ0RkE4TnprS2M/ssd-virtual-servers-banner-2-728x90.jpg" />
+												</a> 
+												
 
 										</article>
 
