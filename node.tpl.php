@@ -40,7 +40,16 @@ require_once dirname ( __FILE__ ) . "/thumbrio.php";
 																								
 
 												<figure class="rowFig" >
-														<img  src="http://placehold.it/499x290" />
+
+													<?php
+
+													$u = str_replace( "public:/", "http://fcarrizalest.com/sites/fcarrizalest.com/files" , $content['field_image']['#object']->field_image['und'][0]['uri']);
+
+														$nI = $content['field_image']['#object']->field_image['und'][0]['filename'];
+														$uEncode = thumbrio($u,"499x290", $content['field_image']['#object']->field_image['und'][0]['filename']);
+
+													?>	
+														<img  alt="<?php echo $nI ?>" title="<?php echo $nI ?>" src="<?php echo $uEncode ?>" />
 												</figure>
 												 <?php endif; ?>
 												 	 <div class="social">
@@ -51,12 +60,7 @@ require_once dirname ( __FILE__ ) . "/thumbrio.php";
 <script id='fb38cos'>(function(i){var f,s=document.getElementById(i);f=document.createElement('iframe');f.src='//api.flattr.com/button/view/?uid=fcarrizalest&url='+encodeURIComponent(document.URL);f.title='<?php print $title; ?>';f.height=62;f.width=55;f.style.borderWidth=0;s.parentNode.insertBefore(f,s);})('fb38cos');</script>
 													</div>
 
-										<?php 
-										echo '<pre>';
 										
-										print_r( str_replace( "public:/", "http://fcarrizalest.com/sites/fcarrizalest.com/files" , $content['field_image']['#object']->field_image['und'][0]['uri']) );
-										echo '</pre>';
-										?>
 												 <?php hide($content['field_image']);
 												 hide($content['field_galeria']);
 
