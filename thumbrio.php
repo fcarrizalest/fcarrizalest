@@ -19,7 +19,7 @@ function thumbrio($url, $size, $thumb_name='thumb.png', $query_arguments=NULL,
     if (substr($url, 0, 7) === 'http://') {
         $url = substr($url, 7);
     }
-    $encoded_url = _thumbrio_urlencode($url);
+    $encoded_url = $url;
     $encoded_size = _thumbrio_urlencode($size);
     $encoded_thumb_name = _thumbrio_urlencode($thumb_name);
     $path = "$encoded_url/$encoded_size/$encoded_thumb_name";
