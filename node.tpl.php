@@ -53,7 +53,7 @@ require_once dirname ( __FILE__ ) . "/thumbrio.php";
 
 										<?php 
 										echo '<pre>';
-										print_r($content['field_image']);
+										
 										print_r($content['field_image']['#object']);
 										echo '</pre>';
 										?>
