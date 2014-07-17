@@ -54,10 +54,10 @@ require_once dirname ( __FILE__ ) . "/thumbrio.php";
 										<?php 
 										echo '<pre>';
 										
-										print_r($content['field_image']['#object']->field_image['und'][0]);
+										print_r( str_replace( "public:/", "http://fcarrizalest.com/sites/fcarrizalest.com/files" , $content['field_image']['#object']->field_image['und'][0]['uri']) );
 										echo '</pre>';
 										?>
-												 <?php 
+												 <?php hide($content['field_image']);
 												 hide($content['field_galeria']);
 
 												print render($content);
