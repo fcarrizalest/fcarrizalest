@@ -1,0 +1,6 @@
+<?php
+define('THUMBRIO_API_KEY', 'YOUR_API_KEY');
+define('THUMBRIO_SECRET_KEY', 'YOUR_SECRET_KEY');
+
+
+?>

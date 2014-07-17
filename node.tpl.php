@@ -1,4 +1,7 @@
- <?php if ($teaser): ?>
+ <?php 
+require_once dirname ( __FILE__ ) . "/thumbrio.php";
+
+ if ($teaser): ?>
 
  	<article class = "row" itemscope itemtype="http://schema.org/Article" >
 											 <h2 > <a href="<?php print $node_url; ?>" itemprop="name" ><?php print $title; ?></a></h2>
@@ -48,6 +51,12 @@
 <script id='fb38cos'>(function(i){var f,s=document.getElementById(i);f=document.createElement('iframe');f.src='//api.flattr.com/button/view/?uid=fcarrizalest&url='+encodeURIComponent(document.URL);f.title='<?php print $title; ?>';f.height=62;f.width=55;f.style.borderWidth=0;s.parentNode.insertBefore(f,s);})('fb38cos');</script>
 													</div>
 
+												<?php 
+												echo '<pre>';
+
+print_r($content );
+												echo '</pre>';
+												?>
 												 <?php hide($content['field_image']);
 												print render($content);
 												?>
