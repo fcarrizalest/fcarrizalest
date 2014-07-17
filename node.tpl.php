@@ -51,7 +51,11 @@ require_once dirname ( __FILE__ ) . "/thumbrio.php";
 <script id='fb38cos'>(function(i){var f,s=document.getElementById(i);f=document.createElement('iframe');f.src='//api.flattr.com/button/view/?uid=fcarrizalest&url='+encodeURIComponent(document.URL);f.title='<?php print $title; ?>';f.height=62;f.width=55;f.style.borderWidth=0;s.parentNode.insertBefore(f,s);})('fb38cos');</script>
 													</div>
 
-										
+										<?php 
+										echo '<pre>';
+										print_r($content['field_galeria']);
+										echo '</pre>';
+										?>
 												 <?php hide($content['field_image']);
 												 hide($content['field_galeria']);
 
