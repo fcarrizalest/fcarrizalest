@@ -54,7 +54,7 @@ require_once dirname ( __FILE__ ) . "/thumbrio.php";
 										<?php 
 										echo '<pre>';
 										
-										print_r($content['field_image']['#object']);
+										print_r($content['field_image']['#object']->field_image['und'][0]['filename']);
 										echo '</pre>';
 										?>
 												 <?php hide($content['field_image']);
