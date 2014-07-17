@@ -58,6 +58,8 @@ print_r($content );
 												echo '</pre>';
 												?>
 												 <?php hide($content['field_image']);
+												 hide($content['field_galeria']);
+												 
 												print render($content);
 												?>
 
