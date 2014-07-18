@@ -46,7 +46,7 @@ require_once dirname ( __FILE__ ) . "/thumbrio.php";
 													$u = str_replace( "public:/", "http://fcarrizalest.com/sites/fcarrizalest.com/files" , $content['field_image']['#object']->field_image['und'][0]['uri']);
 														
 														$nI = $content['field_image']['#object']->field_image['und'][0]['filename'];
-														$uEncode = thumbrio($u,"499x290", $content['field_image']['#object']->field_image['und'][0]['filename']);
+														$uEncode = thumbrio($u,"499x290c-eframe10", $content['field_image']['#object']->field_image['und'][0]['filename']);
 
 															 
 													?>	
