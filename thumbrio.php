@@ -1,6 +1,6 @@
 <?php
 
-require_once dirname ( __FILE__ ) . "/config.php";
+
 
 
 $THUMBRIO_BASE_URLS = array('http://api.thumbr.io/', 'https://api.thumbr.io/');
@@ -11,6 +11,9 @@ $THUMBRIO_BASE_URLS = array('http://api.thumbr.io/', 'https://api.thumbr.io/');
  */
 function thumbrio($url, $size, $thumb_name='thumb.png', $query_arguments=NULL,
                   $base_url=NULL) {
+
+    require_once dirname ( __FILE__ ) . "/config.php";
+    
     global $THUMBRIO_BASE_URLS;
 
     if (!$base_url) {
@@ -43,7 +46,7 @@ function thumbrio($url, $size, $thumb_name='thumb.png', $query_arguments=NULL,
     $token = hash_hmac('md5', $base_url . $path, THUMBRIO_SECRET_KEY);
 
     echo "<br><br> token :" . $token ;
-    
+
     return "$base_url$token/$path";
 }
 
