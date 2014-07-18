@@ -36,16 +36,16 @@ function thumbrio($url, $size, $thumb_name='thumb.png', $query_arguments=NULL,
     //if (in_array($base_url, $THUMBRIO_BASE_URLS)) {
         $path = THUMBRIO_API_KEY . "/$path";
     //}
-    echo "<br><br>path:" . $path ;
+   
 
     
     // some bots (msnbot-media) "fix" the url changing // by /, so even if
     // it's legal it's troublesome to use // in a URL.
     $path = str_replace('//', '%2F%2F', $path);
-    echo "<br><br> new path :".$path;
+    
     $token = hash_hmac('md5', $base_url . $path, THUMBRIO_SECRET_KEY);
 
-    echo "<br><br> token :" . $token ;
+    
 
     return "$base_url$token/$path";
 }
