@@ -48,6 +48,7 @@ require_once dirname ( __FILE__ ) . "/thumbrio.php";
 														$nI = $content['field_image']['#object']->field_image['und'][0]['filename'];
 														$uEncode = thumbrio($u,"499x290", $content['field_image']['#object']->field_image['und'][0]['filename']);
 
+															echo "<br> " . $uEncode . "<br>";  
 													?>	
 														<img  alt="<?php echo $nI ?>" title="<?php echo $nI ?>" src="<?php echo $uEncode ?>" />
 												</figure>
