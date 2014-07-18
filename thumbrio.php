@@ -13,7 +13,7 @@ function thumbrio($url, $size, $thumb_name='thumb.png', $query_arguments=NULL,
                   $base_url=NULL) {
 
     require_once dirname ( __FILE__ ) . "/config.php";
-    
+
     global $THUMBRIO_BASE_URLS;
 
     if (!$base_url) {
@@ -33,9 +33,9 @@ function thumbrio($url, $size, $thumb_name='thumb.png', $query_arguments=NULL,
 
     // We should add the API to the URL when we use the non customized
     // thumbr.io domains
-    if (in_array($base_url, $THUMBRIO_BASE_URLS)) {
+    //if (in_array($base_url, $THUMBRIO_BASE_URLS)) {
         $path = THUMBRIO_API_KEY . "/$path";
-    }
+    //}
     echo "<br><br>path:" . $path ;
 
     
