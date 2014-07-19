@@ -7,7 +7,19 @@ require_once dirname ( __FILE__ ) . "/thumbrio.php";
 											 <h2 > <a href="<?php print $node_url; ?>" itemprop="name" ><?php print $title; ?></a></h2>
 											  <?php if (isset($content['field_image'])): ?>
 											<figure class="rowFig"> 
-													<?php print render($content['field_image']); ?>
+													<?php // print render($content['field_image']); 
+
+
+
+													$u = str_replace( "public:/", "http://fcarrizalest.com/sites/fcarrizalest.com/files" , $content['field_image']['#object']->field_image['und'][0]['uri']);
+														
+														$nI = $content['field_image']['#object']->field_image['und'][0]['filename'];
+														$uEncode = thumbrio($u,"70x70c-emarc-eframe10", $content['field_image']['#object']->field_image['und'][0]['filename']);
+
+															 
+													?>	
+														<img  alt="<?php echo $nI ?>" title="<?php echo $nI ?>" src="<?php echo $uEncode ?>" />
+												
 											</figure>
 
 											<?php endif; ?>
@@ -70,7 +82,24 @@ require_once dirname ( __FILE__ ) . "/thumbrio.php";
 
 
 												<a href="https://www.digitalocean.com/?refcode=ee109fde97fd">
-													<img src="https://88adafc72127a4417182d723eaefb7e7a0720725.googledrive.com/host/0BzTv8wZGN_ZlbEZ0RkE4TnprS2M/ssd-virtual-servers-banner-320x50.jpg" />
+													
+
+
+													<?php // print render($content['field_image']); 
+
+
+
+													 //$u = str_replace( "public:/", "http://fcarrizalest.com/sites/fcarrizalest.com/files" , $content['field_image']['#object']->field_image['und'][0]['uri']);
+														
+														$nI = "ssd-virtual-servers-banner-320x50.jpg";
+														$uEncode = thumbrio("https://88adafc72127a4417182d723eaefb7e7a0720725.googledrive.com/host/0BzTv8wZGN_ZlbEZ0RkE4TnprS2M/ssd-virtual-servers-banner-320x50.jpg","320x50", "ssd-virtual-servers-banner-320x50.jpg");
+
+															 
+													?>	
+														<img  alt="<?php echo $nI ?>" title="<?php echo $nI ?>" src="<?php echo $uEncode ?>" />
+												
+
+													<img src="" />
 												</a> 
 												
 
