@@ -581,6 +581,47 @@ width:210px;
 
 }
 
+#block-apachesolr-search-mlt-001{
+
+border:1px solid #144287;
+margin:20px 0px 20px 0px;
+
+
+}
+
+
+ #block-apachesolr-search-mlt-001 h2{
+ 
+  background-color:#144287;
+   color:white;
+   text-align:center;
+ 
+   margin-bottom: 15px;
+
+}
+
+
+ #block-apachesolr-search-mlt-001 a{
+
+  color:#144287;
+  text-decoration:none;
+  margin: 10px; 0px 10px 0px;   
+
+}
+
+#block-apachesolr-search-mlt-001 ul{
+list-style-type: None;
+
+}
+
+
+#block-apachesolr-search-mlt-001 ul li{
+ padding:1px;
+ margin: 10px 0px 0px 0px;;
+ 
+}
+
+
 
 }
 
