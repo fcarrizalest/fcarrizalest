@@ -621,6 +621,29 @@ list-style-type: None;
  
 }
 
+#sidebarright h2{
+
+   background-color: #144287;
+   color:white;
+   text-align:center;
+   margin:10px 0px 10px 0px;
+
+   
+}
+
+#sidebarright ul{
+
+list-style-type: none;
+
+}
+
+#sidebarright a{
+ 
+text-decoration:none
+
+}
+
+
 
 
 }
